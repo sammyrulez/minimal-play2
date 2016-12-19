@@ -9,9 +9,13 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 [![Build Status](https://travis-ci.org/sammyrulez/minimal-play2.svg?branch=master)](https://travis-ci.org/sammyrulez/minimal-play2)
 
+##Features
+* JSON serialization / deserialization
+* Controller testing
+* CI integration
+
 
 ##Road map
-* CI integration
 * Coverage
 * Release
 * PAAS deploy
