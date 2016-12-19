@@ -1,1 +1,9 @@
-GET  /  @controllers.ApplicationController.index
+GET  /     @controllers.ApplicationController.index
+GET  /api  @controllers.CirceController.get
+
+#SWAGGER DOCS
+GET     /swagger.json           controllers.ApiHelpController.getResources
+
+GET   /assets/*file    controllers.Assets.at(path="/public", file)
+
+GET   /webjars/*file   controllers.WebJarAssets.at(file)
