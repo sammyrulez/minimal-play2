@@ -7,6 +7,8 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 # The minimal setup for a Play framework 2.5.3 Json/API project
 
+[![Build Status](https://travis-ci.org/sammyrulez/minimal-play2.svg?branch=master)](https://travis-ci.org/sammyrulez/minimal-play2)
+
 
 ##Road map
 * CI integration
