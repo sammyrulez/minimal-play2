@@ -1,11 +1,20 @@
 Want to start your [Play 2](https://www.playframework.com/documentation/2.5.x/Home) development, but don't feel like dealing with all the extra fluff that comes with [Typesafe Activator](https://www.typesafe.com/activator/docs) or the example applications?
 
-Minima json api featuring Circe serialization and swagger support.
+Minimal json api featuring Circe serialization and swagger support.
 
 Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 
 # The minimal setup for a Play framework 2.5.3 Json/API project
+
+
+##Road map
+* CI integration
+* Coverage
+* Release
+* PAAS deploy
+
+##Intallation
 
 * Install [Sbt](http://www.scala-sbt.org/index.html)
   * OS X: `brew install sbt`
