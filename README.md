@@ -17,8 +17,11 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 
 ##Road map
+* Monitoring
 * Release
-* PAAS deploy
+* Heroku deploy
+* Docker image
+
 
 ##Intallation
 
