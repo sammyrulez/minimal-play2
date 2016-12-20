@@ -7,16 +7,16 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 # The minimal setup for a Play framework 2.5.3 Json/API project
 
-[![Build Status](https://travis-ci.org/sammyrulez/minimal-play2.svg?branch=master)](https://travis-ci.org/sammyrulez/minimal-play2)
+[![Build Status](https://travis-ci.org/sammyrulez/minimal-play2.svg?branch=master)](https://travis-ci.org/sammyrulez/minimal-play2) [![Coverage Status](https://coveralls.io/repos/github/sammyrulez/minimal-play2/badge.svg?branch=master)](https://coveralls.io/github/sammyrulez/minimal-play2?branch=master)
 
 ##Features
 * JSON serialization / deserialization
 * Controller testing
 * CI integration
+* Coverage
 
 
 ##Road map
-* Coverage
 * Release
 * PAAS deploy
 
