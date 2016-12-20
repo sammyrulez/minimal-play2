@@ -27,7 +27,7 @@ class CirceController extends Controller with Circe {
     Ok(foo.asJson)
   }
 
-  //parse json to case class
+  /*parse json to case class
   def post = Action(circe.json[Foo]) { implicit request =>
     val isEqual = request.body == foo
     Ok(isEqual.toString)
@@ -46,5 +46,5 @@ class CirceController extends Controller with Circe {
   def postTolerateJson = Action(circe.tolerantJson) { implicit request =>
     val isEqual = request.body == foo.asJson
     Ok(isEqual.toString)
-  }
+  }*/
 }

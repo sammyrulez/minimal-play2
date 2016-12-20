@@ -19,3 +19,9 @@ libraryDependencies ++= Seq(
   "org.webjars" 			%% 	"webjars-play" 			% "2.5.0-4",
   "org.webjars" % "swagger-ui" % "2.2.6"
 )
+
+coverageMinimum := 80
+
+coverageFailOnMinimum := true
+
+coverageExcludedPackages := """controllers\..*Reverse.*;router.Routes.*;"""
