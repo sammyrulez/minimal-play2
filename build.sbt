@@ -25,3 +25,10 @@ coverageMinimum := 80
 coverageFailOnMinimum := true
 
 coverageExcludedPackages := """controllers\..*Reverse.*;router.Routes.*;"""
+
+
+
+
+
+
+
