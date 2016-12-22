@@ -19,6 +19,7 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Heroku deploy
 
 ##Road map
+* jwt authentication
 * Docker image
 
 
@@ -29,4 +30,9 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Clone this repo
 * In the root of this repo: `sbt`
 * In the Sbt console that just opened: `run`
-* See [http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json#!/api/get)
+* See [http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json)
+
+##Demo
+
+[Swagger ui](http://minimal-play2.herokuapp.com/webjars/swagger-ui/2.2.6/index.html?url=http://minimal-play2.herokuapp.com/swagger.json)
+
