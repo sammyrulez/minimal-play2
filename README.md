@@ -14,10 +14,10 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Controller testing
 * CI integration
 * Coverage
+* Monitoring with [markscheider](https://github.com/zalando-incubator/markscheider) publishing metrics to [ZMON](https://github.com/zalando/zmon) (see a [demo](https://demo.zmon.io))
 
 
 ##Road map
-* Monitoring
 * Release
 * Heroku deploy
 * Docker image

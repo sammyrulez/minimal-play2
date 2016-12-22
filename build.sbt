@@ -13,6 +13,8 @@ libraryDependencies += "play-circe" %% "play-circe" % "2.5-0.6.0"
 
 libraryDependencies ++= Seq("io.swagger" %% "swagger-play2" % "1.5.3")
 
+libraryDependencies ++= Seq("org.zalando" %% "markscheider" % "2.5.2")
+
 libraryDependencies ++= Seq("org.scalatestplus.play" %% "scalatestplus-play" % "1.5.0" % "test")
 
 libraryDependencies ++= Seq(
