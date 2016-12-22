@@ -15,7 +15,7 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * CI integration
 * Coverage
 * Monitoring with [markscheider](https://github.com/zalando-incubator/markscheider) publishing metrics to [ZMON](https://github.com/zalando/zmon) (see a [demo](https://demo.zmon.io))
-
+* Release
 
 ##Road map
 * Release
@@ -30,4 +30,4 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Clone this repo
 * In the root of this repo: `sbt`
 * In the Sbt console that just opened: `run`
-* See [http://localhost:9000/webjars/swagger-ui/2.2.6/index.html](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html)
+* See [http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json#!/api/get)
