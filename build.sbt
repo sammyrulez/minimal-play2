@@ -26,7 +26,7 @@ coverageMinimum := 80
 
 coverageFailOnMinimum := true
 
-coverageExcludedPackages := """controllers\..*Reverse.*;router.Routes.*;"""
+coverageExcludedPackages := "controllers\\..*Reverse.*;router.Routes.*;org.zalando.markscheider.*"
 
 publishTo := Some(Resolver.file("file",  new File( "/tmp/fakerepo" )) )
 
