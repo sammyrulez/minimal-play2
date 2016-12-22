@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/minimal-play2 -Dhttp.port=${PORT}
+web: target/universal/stage/bin/minimal-play2 -Dhttp.port=${PORT} -Dplay.crypto.secret=${APPLICATION_SECRET}
