@@ -16,10 +16,9 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Coverage
 * Monitoring with [markscheider](https://github.com/zalando-incubator/markscheider) publishing metrics to [ZMON](https://github.com/zalando/zmon) (see a [demo](https://demo.zmon.io))
 * Release
+* Heroku deploy
 
 ##Road map
-* Release
-* Heroku deploy
 * Docker image
 
 
