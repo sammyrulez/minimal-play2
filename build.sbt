@@ -3,7 +3,7 @@ lazy val root = (project in file("."))
   .settings(
     organization := "com.github.sammyrulez",
     name := "minimal-play2",
-    version := "1.1.0",
+    version <<= version in ThisBuild,
     scalaVersion := "2.11.8"
   )
 
