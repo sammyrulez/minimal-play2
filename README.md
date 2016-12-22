@@ -15,7 +15,7 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * CI integration
 * Coverage
 * Monitoring with [markscheider](https://github.com/zalando-incubator/markscheider) publishing metrics to [ZMON](https://github.com/zalando/zmon) (see a [demo](https://demo.zmon.io))
-
+* Release
 
 ##Road map
 * Release
