@@ -1,0 +1,1 @@
+web: target/universal/stage/bin/minimal-play2 -Dhttp.port=${PORT}
