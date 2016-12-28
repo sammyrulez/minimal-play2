@@ -9,11 +9,15 @@ lazy val root = (project in file("."))
 
 resolvers += "Bintary JCenter" at "http://jcenter.bintray.com"
 
+resolvers += Resolver.mavenLocal
+
 libraryDependencies += "play-circe" %% "play-circe" % "2.5-0.6.0"
 
-libraryDependencies ++= Seq("io.swagger" %% "swagger-play2" % "1.5.3")
+libraryDependencies ++= Seq("io.swagger" %% "swagger-play2" % "1.5.4-SNAPSHOT")
 
 libraryDependencies ++= Seq("org.zalando" %% "markscheider" % "2.5.2")
+
+libraryDependencies ++= Seq("com.pauldijou" %% "jwt-play" % "0.9.2")
 
 libraryDependencies ++= Seq("org.scalatestplus.play" %% "scalatestplus-play" % "1.5.0" % "test")
 
