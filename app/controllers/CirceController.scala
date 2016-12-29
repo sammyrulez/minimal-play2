@@ -12,7 +12,6 @@ import pdi.jwt._
 import play.api._
 import play.api.libs.circe.Circe
 import play.api.mvc._
-import play.modules.swagger.{PlayConfigFactory, PlaySwaggerConfig}
 
 
 @Api(
@@ -29,14 +28,13 @@ class CirceController extends Controller with Circe {
   case class Foo(foo: String, bar: Bar)
   val bar = Bar(1)
   val foo = Foo("foo", bar)
-  val config: PlaySwaggerConfig = PlayConfigFactory.getConfig
 
 
 
   @ApiOperation(value = "get All Todos",
     notes = "Returns List of all Todos",
     response = classOf[Foo], httpMethod = "GET",authorizations = Array(new Authorization(value="api_key")))
-  def get = AuthenticatedAction { request =>
+  def get = Action { request =>
 
     val foo = Foo(request.jwtSession.getAs[User]("user").getOrElse(new User("Anonymous")).name, bar)
 
