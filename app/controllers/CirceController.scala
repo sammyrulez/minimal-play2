@@ -5,25 +5,39 @@ package controllers
   */
 import io.circe.generic.auto._
 import io.circe.syntax._
-import io.swagger.annotations.{Api, ApiOperation}
+import io.swagger.annotations._
+import io.swagger.config.ConfigFactory
+import models.User
+import pdi.jwt._
 import play.api._
 import play.api.libs.circe.Circe
 import play.api.mvc._
 
 
-@Api(value = "/api", description = "Operations with Todos")
+@Api(
+value = "/api",
+produces = "application/json",
+consumes = "application/json"
+
+  // authorizations = Array(new ApiKeyAuthDefinition("api_key",In.HEADER))
+)
+@SwaggerDefinition(securityDefinition = new SecurityDefinition(apiKeyAuthDefintions = Array(new ApiKeyAuthDefinition(name= "api_key", key="api_key", in=ApiKeyAuthDefinition.ApiKeyLocation.HEADER))))
 class CirceController extends Controller with Circe {
 
   case class Bar(bar: Int)
   case class Foo(foo: String, bar: Bar)
-
   val bar = Bar(1)
   val foo = Foo("foo", bar)
 
+
+
   @ApiOperation(value = "get All Todos",
     notes = "Returns List of all Todos",
-    response = classOf[Foo], httpMethod = "GET")
-  def get = Action {
+    response = classOf[Foo], httpMethod = "GET",authorizations = Array(new Authorization(value="api_key")))
+  def get = AuthenticatedAction { request =>
+
+    val foo = Foo(request.jwtSession.getAs[User]("user").getOrElse(new User("Anonymous")).name, bar)
+
     Ok(foo.asJson)
   }
 

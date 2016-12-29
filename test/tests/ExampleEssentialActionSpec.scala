@@ -30,7 +30,7 @@ class ExampleEssentialActionSpec extends PlaySpec with OneServerPerSuite {
       val testPaymentGatewayURL = s"http://$myPublicAddress/api"
       val response = await(wsClient.url(testPaymentGatewayURL).get())
 
-      response.status mustBe OK
+      response.status mustBe UNAUTHORIZED
     }
   }
 }
