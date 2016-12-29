@@ -11,6 +11,7 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 
 ##Features
 * JSON serialization / deserialization
+* jwt authentication
 * Controller testing
 * CI integration
 * Coverage
@@ -18,9 +19,6 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Release
 * Heroku deploy
 
-##Road map
-* jwt authentication
-* Docker image
 
 
 ##Intallation
