@@ -7,9 +7,10 @@ lazy val root = (project in file("."))
     scalaVersion := "2.11.8"
   )
 
+
 resolvers += "Bintary JCenter" at "http://jcenter.bintray.com"
 
-resolvers += Resolver.mavenLocal
+resolvers += "sammyrulez" at "https://raw.githubusercontent.com/sammyrulez/my-maven-repo/master/"
 
 libraryDependencies += "play-circe" %% "play-circe" % "2.5-0.6.0"
 
