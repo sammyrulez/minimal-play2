@@ -18,7 +18,7 @@ import scala.concurrent.Future
 class ExampleControllerSpec extends PlaySpec with Results {
 
 
-  val foo: String = "{\"foo\":\"Anonymous\",\"bar\":{\"bar\":1}}"
+  val foo: String = "{\"foo\":\"Paul\",\"bar\":{\"bar\":1}}"
 
 
   "Example Application#index" should {
