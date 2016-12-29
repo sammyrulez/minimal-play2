@@ -34,7 +34,7 @@ class CirceController extends Controller with Circe {
   @ApiOperation(value = "get All Todos",
     notes = "Returns List of all Todos",
     response = classOf[Foo], httpMethod = "GET",authorizations = Array(new Authorization(value="api_key")))
-  def get = Action { request =>
+  def get = AuthenticatedAction { request =>
 
     val foo = Foo(request.jwtSession.getAs[User]("user").getOrElse(new User("Anonymous")).name, bar)
 
