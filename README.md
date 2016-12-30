@@ -28,9 +28,12 @@ Original work by [@futurice](https://github.com/futurice/minimal-play2.git)
 * Clone this repo
 * In the root of this repo: `sbt`
 * In the Sbt console that just opened: `run`
-* See [http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json)
+* Open: [http://localhost:9000/](http://localhost:9000/) and take note of the api_key token
+* Open: [Swagger ui](http://localhost:9000/webjars/swagger-ui/2.2.6/index.html?url=http://localhost:9000/swagger.json) and use the above token to autenticate the api call
 
-##Demo
+##Heroku Demo
+
+[Home page](http://minimal-play2.herokuapp.com/)
 
 [Swagger ui](http://minimal-play2.herokuapp.com/webjars/swagger-ui/2.2.6/index.html?url=http://minimal-play2.herokuapp.com/swagger.json)
 

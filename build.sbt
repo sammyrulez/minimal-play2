@@ -40,7 +40,8 @@ releaseProcess := Seq(
   commitReleaseVersion,
   tagRelease,
   setNextVersion,
-  commitNextVersion
+  commitNextVersion,
+  pushChanges
 )
 
 coverageExcludedPackages := "controllers\\..*Reverse.*;router.Routes.*;org.zalando.markscheider.*"
