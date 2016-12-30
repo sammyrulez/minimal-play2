@@ -11,7 +11,7 @@ import play.api.test.Helpers._
 import io.circe.generic.auto._
 import io.circe.syntax._
 import models.User
-import pdi.jwt.JwtSession
+import pdi.jwt._
 
 import scala.concurrent.Future
 
@@ -38,6 +38,7 @@ class ExampleControllerSpec extends PlaySpec with Results {
       val controller = new CirceController ()
       val session2 = JwtSession() + ("user", User("Paul"))
       val request = FakeRequest().withHeaders(("Authorization", "Bearer " + session2.serialize))
+      println(request.jwtSession)
       val result: Future[Result] = controller.get().apply(request)
       val bodyText: String = contentAsString(result)
       bodyText mustBe foo
