@@ -31,6 +31,18 @@ coverageMinimum := 80
 
 coverageFailOnMinimum := true
 
+
+import sbtrelease.ReleaseStateTransformations._
+
+releaseProcess := Seq(
+  inquireVersions,
+  setReleaseVersion,
+  commitReleaseVersion,
+  tagRelease,
+  setNextVersion,
+  commitNextVersion
+)
+
 coverageExcludedPackages := "controllers\\..*Reverse.*;router.Routes.*;org.zalando.markscheider.*"
 
 publishTo := Some(Resolver.file("file",  new File( "/tmp/fakerepo" )) )
