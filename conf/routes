@@ -1,5 +1,8 @@
-GET  /     @controllers.ApplicationController.index
-GET  /api  @controllers.CirceController.get
+GET     /                           controllers.Application.index
+GET     /string/:string             controllers.Application.getString(string: String)
+
+GET     /json                       controllers.Application.json
+GET     /plaintext                  controllers.Application.plaintext
 
 #SWAGGER DOCS
 GET    /swagger.json           controllers.ApiHelpController.getResources

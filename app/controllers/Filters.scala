@@ -5,11 +5,11 @@ package controllers
   */
 import javax.inject.Inject
 
-import org.zalando.markscheider.MetricsFilter
+//import org.zalando.markscheider.MetricsFilter
 import play.api.http.DefaultHttpFilters
 
 
 class Filters @Inject() (
-                          log: LoggingFilter,
-                            metricsFilter: MetricsFilter
-                        ) extends DefaultHttpFilters(log,metricsFilter)
+                          log: LoggingFilter
+                         //   metricsFilter: MetricsFilter
+                        ) extends DefaultHttpFilters(log)

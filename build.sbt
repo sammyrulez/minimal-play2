@@ -12,20 +12,9 @@ resolvers += "Bintary JCenter" at "http://jcenter.bintray.com"
 
 resolvers += "sammyrulez" at "https://raw.githubusercontent.com/sammyrulez/my-maven-repo/master/"
 
-libraryDependencies += "play-circe" %% "play-circe" % "2.5-0.6.0"
+libraryDependencies += guice
 
-libraryDependencies ++= Seq("io.swagger" %% "swagger-play2" % "1.5.4-SNAPSHOT")
-
-libraryDependencies ++= Seq("org.zalando" %% "markscheider" % "2.5.2")
-
-libraryDependencies ++= Seq("com.pauldijou" %% "jwt-play" % "0.9.2")
-
-libraryDependencies ++= Seq("org.scalatestplus.play" %% "scalatestplus-play" % "1.5.0" % "test")
-
-libraryDependencies ++= Seq(
-  "org.webjars" 			%% 	"webjars-play" 			% "2.5.0-4",
-  "org.webjars" % "swagger-ui" % "2.2.6"
-)
+libraryDependencies ++= Seq("com.pauldijou" %% "jwt-play" % "0.12.1")
 
 coverageMinimum := 80
 
