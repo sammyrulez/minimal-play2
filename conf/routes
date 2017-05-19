@@ -3,12 +3,3 @@ GET     /string/:string             controllers.Application.getString(string: St
 
 GET     /json                       controllers.Application.json
 GET     /plaintext                  controllers.Application.plaintext
-
-#SWAGGER DOCS
-GET    /swagger.json           controllers.ApiHelpController.getResources
-
-GET   /assets/*file    controllers.Assets.at(path="/public", file)
-
-GET   /webjars/*file   controllers.WebJarAssets.at(file)
-
-GET   /metrics                        org.zalando.markscheider.MetricsController.metrics
